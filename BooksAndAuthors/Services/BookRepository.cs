@@ -46,7 +46,7 @@ namespace BooksAndAuthors.Services
                     str.Append("<html>");
                     str.Append(book.AuthorLastName + book.AuthorFirstName + ".");
                     str.Append($"''" + book.Title + "''.");
-                    str.Append("/n");
+                    str.Append("br/");
                     str.Append("<I>" + book.Mla.TitleOfContainer + "</I>" + "," + book.Publisher + "," + book.Mla.PublicationDate + "," + book.Mla.PageRange + ".");
                     str.Append("</html>");
                     book.MLA_String = str.ToString();
@@ -56,7 +56,7 @@ namespace BooksAndAuthors.Services
                 {
                     str1.Append("<html>");
                     str1.Append(book.AuthorLastName + book.AuthorFirstName + "." + $"''" + book.Title + "'',");
-                    str1.Append("/n");
+                    str1.Append("br/");
                     str1.Append("<I>" + book.Cms.JournalTitle + "</I>" + " " + book.Cms.VolumeNo + ", no" + book.Cms.IssueNo + " (" + book.Cms.Year + "):" + book.Cms.PageRange + "," + book.Cms.Url + "." + book.Cms.DOI);
                     str1.Append("</html>");
                     book.CMS_String = str1.ToString();
