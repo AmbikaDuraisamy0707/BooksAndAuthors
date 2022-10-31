@@ -12,12 +12,5 @@ namespace BooksAndAuthors.Data
 
         public DbSet<Book> Books { get; set; }
 
-        //public DbSet<BookPublisher> BookPublisher { get; set; }
-        //public DbSet<BookAuthor> BookAuthor { get; set; }
-
-        //public DbSet<BookDTO> PublishBook { get; set; }
-       // public DbSet<AuthorDTO> Author { get; set; }
-        
-
     }
 }
